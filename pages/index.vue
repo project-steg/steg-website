@@ -1,72 +1,63 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        steg-website
-      </h1>
-      <h2 class="subtitle">
-        Steg&#39;s official website using Nuxt.js
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="index">
+    <div class="site-logo">
+      <img src="/img/home/site-logo-center.png" alt="Steg" id="logo">
+      <p class="description">現在メンテナンス中です。</p>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  }
+
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+
+.index {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-image: url('/img/home/bg.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.index::before {
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.site-logo {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+#logo {
+  height: 50vh;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.description {
+  margin-top: 10px;
 }
 
-.links {
-  padding-top: 15px;
-}
 </style>
