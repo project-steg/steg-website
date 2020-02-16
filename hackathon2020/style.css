@@ -1,0 +1,116 @@
+/* 共通 */
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #282828;
+    /* font-size: 14px; */
+    line-height: 2rem;
+}
+
+.str-strong {
+    font-weight: 900;
+}
+
+section {
+    margin: 50px 0 50px 0;
+}
+
+.sec-title {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.sec-sub-title {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.br-block {
+    display: block;
+}
+
+/* ヘッダー */
+
+.header-steg {
+    background-color: #F8F9FA;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.header-steg-logo {
+    height: 50px;
+}
+
+.header-steg-logo-char {
+    height: 35px;
+}
+
+
+/* JumboTron部分 */
+
+.jt-bg {
+    background-image: url('img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jt-logo {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.header-str-highlight {
+    display: inline;
+    font-size: 1.8rem;
+    background-color: #FFEC41;
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 400px) {
+    .header-str-highlight {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .jt-logo {
+        width: 70%;
+        max-width: 1300px;
+        height: auto;
+    }
+}
+
+/* 審査員部分 */
+
+.person-img {
+    width: 100%;
+}
+
+.person-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+/* ボタン部分 */
+.btn-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-big {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 900;
+}
