@@ -1,5 +1,5 @@
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 1000px) {
+/*header css start*/
 .header-left{
     display: none;
 }
@@ -11,5 +11,37 @@
 .header-responsive{
     display: block;
 }
+/*header css end*/
+
+/*top-wrapper css start*/
+.tagline{
+    font-size: 25px;
+}
+
+.top-wrapper-logo{
+    width: 370px;
+    height: auto;
+}
+/*top-wrapper css end*/
+}
+
+@media screen and (max-width: 480px) {
+/*header start*/
+.menu ul li a{
+    color: #ffffff;
+}
+/*header end*/
+
+/*top-wrapper css start*/
+.tagline{
+    font-size: 21px;
+}
+
+.top-wrapper-logo{
+    width: 300px;
+    height: auto;
+}
+
+/*top-wrapper css end*/
 
 }
