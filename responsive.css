@@ -1,1 +1,15 @@
-/*hello*/
+@media screen and (max-width: 480px) {
+
+.header-left{
+    display: none;
+}
+
+.header-websize{
+    display: none;
+}
+
+.header-responsive{
+    display: block;
+}
+
+}
