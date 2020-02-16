@@ -221,3 +221,18 @@ select {
   margin-top: 10px;
 }
 /*index css end*/
+
+/*header css start*/
+
+/*header css end*/
+
+/*top-wrapper css start*/
+.top-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: url("img/top-wrapper-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*top-wrapper css end*/
