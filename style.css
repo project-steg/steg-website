@@ -176,6 +176,7 @@ select {
   vertical-align: middle;
 }
 
+/*index css start*/
 .index {
   height: 100vh;
   position: fixed;
@@ -219,3 +220,4 @@ select {
 .description {
   margin-top: 10px;
 }
+/*index css end*/
