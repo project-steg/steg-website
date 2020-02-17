@@ -483,7 +483,7 @@ label:focus {
 .partners-container{
   position: relative;
   overflow: hidden;
-  padding: 80px 0;
+  padding-top: 80px;
   z-index: 2;
 }
 .partners-container:before {
@@ -491,8 +491,8 @@ label:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120%;
-  height: 70%;
+  width: 150%;
+  height: 80%;
   margin: 3% -10% 0;
   background: #eeeeee;
   -webkit-transform-origin: left center;
@@ -510,6 +510,38 @@ label:focus {
   padding-bottom: 20vh; 
 }
 /*diagonally end*/
+.partners-buffer{
+  padding: 10vh 0;
+}
 
+.partners-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.partners-logo{
+  width: 20vw;
+  height: auto;
+}
+
+.partners-label{
+  width: 50%;
+}
+
+.partners-name{
+  font-family: "Noto Sans JP";
+  font-size: calc(12px + 1vw);
+  font-weight: 400;
+  color: #404040;
+  margin: 1em 10%;
+}
+
+.partners-description{
+  font-family: "Noto Sans JP";
+  font-size: calc(10px + 0.8vw);
+  font-weight: 400;
+  color: #404040;
+  padding: 0.5em 10%;
+}
 /*partners-wrapper css end*/

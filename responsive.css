@@ -30,6 +30,12 @@
     width: 30vw;
 }
 /*about-wrapper css end*/
+
+/*partners-wrapper css start*/
+.partners-logo{
+    width: calc(180px + 1vw);
+  }
+/*partners-wrapper css end*/
 }
 
 @media screen and (max-width: 480px) {
@@ -58,4 +64,22 @@
 }
 /*about-wrapper css end*/
 
+/*partners-wrapper css start*/
+.partners-contents{
+    flex-direction : column;
+}
+
+.partners-label{
+    width: 80%;
+    text-align: center;
+}
+
+.partners-logo{
+    width: 35vw;
+}
+
+.partners-name{
+    text-align: center;
+}
+/*partners-wrapper css end*/
 }
