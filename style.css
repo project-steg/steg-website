@@ -89,7 +89,7 @@ video {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 article,
@@ -266,7 +266,7 @@ header{
 }
 
 .header-websize ul li a{
-  font-family: "メイリオ";
+  font-family: "Noto Sans JP";
   font-weight: 400;
   text-decoration: none;
   padding: 20px 20px;
@@ -352,7 +352,7 @@ label:focus {
   color: #999;
   font-size: 0.875rem;
   transition: color 0.3s ease-out;
-  font-family: "メイリオ";
+  font-family: "Noto Sans JP";
   font-weight: 400;
 }
 .menu ul li{
@@ -392,7 +392,7 @@ label:focus {
 }
 
 .tagline{
-  font-family: "メイリオ";
+  font-family: "Noto Sans JP";
   font-size: 2.5vw;
 }
 
@@ -410,8 +410,8 @@ label:focus {
 
 .wrapper-title{       /*[all css] wrapper-title*/
   width: 5em;
-  height: 0.8em;
-  font-family: "メイリオ";
+  height: 1.1em;
+  font-family: "Noto Sans JP";
   font-size: calc(20px + 2vw);
   font-weight: 700;
   color: #404040;
@@ -421,7 +421,7 @@ label:focus {
 }
 
 .about-steg{
-  font-family: "メイリオ";
+  font-family: "Noto Sans JP";
   font-size: calc(12px + 1.5vw);
   font-weight: 400;
   color: #404040;
@@ -450,8 +450,8 @@ label:focus {
 
 .about-title-long{
   width: 9.5em;
-  height: 0.85em;
-  font-family: "メイリオ";
+  height: 1.2em;
+  font-family: "Noto Sans JP";
   font-size: calc(12px + 1.5vw);
   font-weight: 400;
   color: #404040;
@@ -461,8 +461,8 @@ label:focus {
 
 .about-title-short{
   width: 5em;
-  height: 0.85em;
-  font-family: "メイリオ";
+  height: 1.2em;
+  font-family: "Noto Sans JP";
   font-size: calc(12px + 1.5vw);
   font-weight: 400;
   color: #404040;
@@ -471,7 +471,7 @@ label:focus {
 }
 
 .about-text{
-  font-family: "メイリオ";
+  font-family: "Noto Sans JP";
   font-size: calc(10px + 1.2vw);
   font-weight: 400;
   color: #404040;
