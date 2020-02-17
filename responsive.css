@@ -23,6 +23,13 @@
     height: auto;
 }
 /*top-wrapper css end*/
+
+/*about-wrapper css start*/
+.about-img{
+    height: 30vw;
+    width: 30vw;
+}
+/*about-wrapper css end*/
 }
 
 @media screen and (max-width: 480px) {
@@ -43,5 +50,12 @@
 }
 
 /*top-wrapper css end*/
+
+/*about-wrapper css start*/
+.about-img{
+    height: 40vw;
+    width: 40vw;
+}
+/*about-wrapper css end*/
 
 }

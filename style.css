@@ -406,6 +406,7 @@ label:focus {
 .about-wrapper{
   width: auto;
   padding-top: calc(100px - 10vh);
+  padding-bottom: 5vh;
 }
 
 .wrapper-title{       /*[all css] wrapper-title*/
@@ -438,8 +439,8 @@ label:focus {
 }
 
 .about-img{
-  height: 30vw;
-  width: 30vw;
+  height: 25vw;
+  width: 25vw;
   border-radius: 50%;
   object-fit: cover;
 }
