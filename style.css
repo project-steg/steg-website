@@ -404,7 +404,6 @@ label:focus {
 
 /*about-wrapper css start*/
 .about-wrapper{
-  height: 100vh;
   width: auto;
   padding: 200px 10%;
 }
@@ -438,5 +437,12 @@ label:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-img{
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  object-fit: cover;
 }
 /*about-wrapper css end*/
