@@ -405,31 +405,29 @@ label:focus {
 /*about-wrapper css start*/
 .about-wrapper{
   width: auto;
-  padding: 200px 10%;
+  padding-top: calc(100px - 10vh);
 }
 
 .wrapper-title{       /*[all css] wrapper-title*/
-  width: 340px;
-  height: 45px;
+  width: 5em;
+  height: 0.8em;
   font-family: "メイリオ";
-  font-size: 60px;
+  font-size: calc(20px + 2vw);
   font-weight: 700;
   color: #404040;
-  border-bottom: 10px solid rgb(32,216,186,0.5);
+  border-bottom: 0.2em solid rgb(32,216,186,0.5);
+  margin-top: calc(17vw - 5vh);
+  margin-left: 10%;
 }
 
 .about-steg{
   font-family: "メイリオ";
-  font-size: 25px;
+  font-size: calc(12px + 1.5vw);
   font-weight: 400;
   color: #404040;
-  padding: 120px 40px;
+  padding: 4em 10%;
   display: flex;
   justify-content:center;
-
-}
-
-.about-continer{
 
 }
 
@@ -444,5 +442,39 @@ label:focus {
   width: 30vw;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.about-label{
+  width: 50%;
+}
+
+.about-title-long{
+  width: 9.5em;
+  height: 0.85em;
+  font-family: "メイリオ";
+  font-size: calc(12px + 1.5vw);
+  font-weight: 400;
+  color: #404040;
+  border-bottom: 3px solid rgb(32,216,186,0.5);
+  margin: 1em 10%;
+}
+
+.about-title-short{
+  width: 5em;
+  height: 0.85em;
+  font-family: "メイリオ";
+  font-size: calc(12px + 1.5vw);
+  font-weight: 400;
+  color: #404040;
+  border-bottom: 3px solid rgb(32,216,186,0.5);
+  margin: 1em 10%;
+}
+
+.about-text{
+  font-family: "メイリオ";
+  font-size: calc(10px + 1.2vw);
+  font-weight: 400;
+  color: #404040;
+  padding: 0.5em 10%;
 }
 /*about-wrapper css end*/
