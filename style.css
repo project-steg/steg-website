@@ -233,6 +233,7 @@ header{
   display: flex;
   justify-content: flex-start;
   position: relative;
+  z-index: 101;
 }
 .triangle{
   border-bottom: 220px solid transparent;
@@ -245,6 +246,7 @@ header{
   position: absolute;
   top: 5px;
   left: 10px;
+  cursor: pointer;
 }
 /*.header-left end*/
 
@@ -283,7 +285,7 @@ header{
 .header-menu-logo{
   width: 120px;
   height: auto;
-  padding-left:40px;
+  cursor: pointer;
 }
 /*nav start*/
 .menu-toggle {
@@ -341,10 +343,14 @@ label:focus {
   margin: 16px 0;
   padding: 0;
 }
+
+.pl-tw{
+  padding-left: 20px;
+}
 .menu ul li a, .menu ul li label {
   display: block;
   text-align: left;
-  padding-left:60px;
+  padding-left:40px;
   line-height: 60px;
   text-decoration: none;
   color: #999;
