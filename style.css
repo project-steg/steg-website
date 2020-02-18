@@ -549,26 +549,64 @@ label:focus {
 /*members-wrapper css start*/
 .members-wrapper{
   position: relative;
-  top: -150px;
+  top: calc(-10vw - 4vh);
+}
+
+.members-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.members-contents{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(80px + 5vw);
+  height: calc(80px + 5vw);
+  margin: 50px;
 }
 
 .circle {	
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: calc(80px + 5vw);
+  height: calc(80px + 5vw);
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
-.circle span {
+.members-text{
   position: absolute;
-  display: inline-block;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width :80px;
-  text-align:center;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width : calc(80px + 5vw);
+  height: calc(80px + 5vw);
+  font-family: "Noto Sans JP";
+  font-size: calc(10px + 0.5vw);
+  color: rgb(0,0,0,0);
+  cursor: pointer;
+}
+
+.img-shadow{
+  width: calc(80px + 5vw);
+  height: calc(80px + 5vw);
+  border-radius: 50%;
+}
+
+.members-contents:hover .circle{
+  position: absolute;
+  z-index: -1;
+}
+
+.members-contents:hover .img-shadow{
+  box-shadow: 0 0 100px 100px rgb(0,0,0,0.5) inset;
+}
+
+.members-contents:hover .members-text{
+  color: #ffffff;
 }
 /*members-wrapper css end*/
