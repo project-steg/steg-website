@@ -545,3 +545,30 @@ label:focus {
   padding: 0.5em 10%;
 }
 /*partners-wrapper css end*/
+
+/*members-wrapper css start*/
+.members-wrapper{
+  position: relative;
+  top: -150px;
+}
+
+.circle {	
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width :80px;
+  text-align:center;
+}
+/*members-wrapper css end*/
