@@ -393,6 +393,7 @@ label:focus {
   flex-direction : column;
   justify-content:center;
   align-items: center;
+  background-attachment: fixed;
 }
 
 .tagline{
@@ -497,7 +498,7 @@ label:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150%;
+  width: 120%;
   height: 80%;
   margin: 3% -10% 0;
   background: #eeeeee;
@@ -559,6 +560,7 @@ label:focus {
 }
 
 .members-container{
+  padding-top: 6vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,7 +573,7 @@ label:focus {
   position: relative;
   width: calc(80px + 5vw);
   height: calc(80px + 5vw);
-  margin: 50px;
+  margin: 5vw;
 }
 
 .circle {	
