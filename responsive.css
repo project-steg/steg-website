@@ -79,6 +79,52 @@
     font-size: calc(8px + 0.4vw);
     color: #ffffff;
 }
+  
+.grad-btn{
+  width: 4em;
+  height: 1.2em;
+  font-family: "Noto Sans JP";
+  font-size: calc(12px + 1vw);
+  font-weight: 400;
+  color: #404040;
+  border-bottom: 3px solid rgb(32,216,186,0.5);
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+  .grad-btn::before {
+    content: "OPEN";
+  }
+  .grad-item {
+    position: relative;
+    overflow: hidden;
+    height: calc(260px + 10vw); /*隠した状態の高さ*/
+  }
+  .grad-item::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /*グラデーションで隠す高さ*/
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    content: "";
+  }
+  .grad-trigger {
+    display: none; /*チェックボックスは常に非表示*/
+  }
+  .grad-trigger:checked ~ .grad-btn::before {
+    content: "CLOSE"; /*チェックされていたら、文言を変更する*/
+  }
+  .grad-trigger:checked ~ .grad-item {
+    height: auto; /*チェックされていたら、高さを戻す*/
+  }
+  .grad-trigger:checked ~ .grad-item::before {
+    display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+  }
 /*members-wrapper css end*/
 }
 

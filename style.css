@@ -576,6 +576,7 @@ label:focus {
   width : calc(80px + 5vw);
   height: calc(80px + 5vw);
   font-family: "Noto Sans JP";
+  font-weight: 400;
   font-size: calc(10px + 0.5vw);
   color: rgb(0,0,0,0);
   cursor: pointer;
@@ -598,6 +599,10 @@ label:focus {
 
 .members-contents:hover .members-text{
   color: #ffffff;
+}
+
+.grad-trigger {
+  display: none; /*チェックボックスは常に非表示*/
 }
 /*members-wrapper css end*/
 
