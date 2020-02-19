@@ -538,6 +538,7 @@ label:focus {
 /*members-wrapper css start*/
 .members-wrapper{
   padding-bottom: calc(12vw - 3vh);
+  overflow-x: hidden;
 }
 
 .members-container{
@@ -603,5 +604,7 @@ label:focus {
 /*contact-wrapper css start*/
 .contact-wrapper{
   background: #eeeeee;
+  overflow: hidden;
 }
+
 /*contact-wrapper css end*/

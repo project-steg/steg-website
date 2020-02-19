@@ -45,16 +45,16 @@
 .members-contents{
     position: static;
     flex-direction: row;
-    width : calc(120px + 8vw);
+    width : calc(135px + 9vw);
     height: calc(60px + 4vw);
     background: #404040;
+    border-radius: calc(60px + 4vw);
     margin: 2vw;
 }
 
 .circle{
     width : calc(60px + 4vw);
     height: calc(60px + 4vw);
-    border-radius: 0;
 }
 
 .img-shadow{
