@@ -408,12 +408,6 @@ label:focus {
 /*top-wrapper css end*/
 
 /*about-wrapper css start*/
-.about-wrapper{
-  width: auto;
-  padding-top: calc(100px - 10vh);
-  padding-bottom: 5vh;
-}
-
 .wrapper-title{       /*[all css] wrapper-title*/
   width: 5em;
   height: 1.1em;
@@ -422,8 +416,11 @@ label:focus {
   font-weight: 700;
   color: #404040;
   border-bottom: 0.2em solid rgb(32,216,186,0.5);
-  margin-top: calc(17vw - 5vh);
   margin-left: 10%;
+}
+
+.about-wrapper{
+  padding-top: calc(8vw - 2vh);
 }
 
 .about-steg{
@@ -488,6 +485,16 @@ label:focus {
 /*partners-wrapper css start*/
 .partners-wrapper{
   background: #eeeeee;
+}
+
+.triangle-top{
+  border-top: 100px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+
+.triangle-bottom{     /*[all css] triangle-bottom*/
+  border-right: 100vw solid transparent;
+  border-bottom: 50px solid #b2ce54;
 }
 
 .partners-container{
