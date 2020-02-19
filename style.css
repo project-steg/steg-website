@@ -420,7 +420,8 @@ label:focus {
 }
 
 .about-wrapper{
-  padding-top: calc(8vw - 2vh);
+  padding-top: calc(16vw - 4vh);
+  padding-bottom: calc(8vw - 2vh);
 }
 
 .about-steg{
@@ -485,16 +486,17 @@ label:focus {
 /*partners-wrapper css start*/
 .partners-wrapper{
   background: #eeeeee;
+  overflow-x: hidden;
 }
 
-.triangle-top{
-  border-top: 100px solid #ffffff;
+.triangle-top-g{     /*[all css] triangle-top*/
+  border-top: 18vh solid #ffffff;
   border-left: 100vw solid transparent;
 }
 
-.triangle-bottom{     /*[all css] triangle-bottom*/
-  border-right: 100vw solid transparent;
-  border-bottom: 50px solid #b2ce54;
+.triangle-top-w{     /*[all css] triangle-top*/
+  border-top: 18vh solid #eeeeee;
+  border-left: 100vw solid transparent;
 }
 
 .partners-container{
@@ -534,6 +536,10 @@ label:focus {
 /*partners-wrapper css end*/
 
 /*members-wrapper css start*/
+.members-wrapper{
+  padding-bottom: calc(12vw - 3vh);
+}
+
 .members-container{
   padding-top: 6vw;
   display: flex;
@@ -593,3 +599,9 @@ label:focus {
   color: #ffffff;
 }
 /*members-wrapper css end*/
+
+/*contact-wrapper css start*/
+.contact-wrapper{
+  background: #eeeeee;
+}
+/*contact-wrapper css end*/

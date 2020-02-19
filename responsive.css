@@ -109,6 +109,14 @@
 /*about-wrapper css end*/
 
 /*partners-wrapper css start*/
+.triangle-top-g{     /*[all css] triangle-top*/
+    border-top: 12vh solid #ffffff;
+  }
+  
+  .triangle-top-w{     /*[all css] triangle-top*/
+    border-top: 12vh solid #eeeeee;
+  }
+
 .partners-contents{
     flex-direction : column;
 }
