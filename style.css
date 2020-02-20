@@ -612,6 +612,17 @@ label:focus {
   overflow: hidden;
 }
 
+.contact-container{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.contact-container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*contact-wrapper css end*/
 
 /*footer css start*/
@@ -622,7 +633,7 @@ footer{
 
 .footer-container{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .footer-left ul{
@@ -637,11 +648,11 @@ footer{
 }
 
 .footer-left{
-  padding: 2vw;
+  padding: 3vw 4vw;
 }
 
 .footer-right{
-  padding: 2vw;
+  padding: 3vw 4vw;
   display: flex;
   justify-content: end;
 }
