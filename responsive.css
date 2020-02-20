@@ -126,6 +126,16 @@
     display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
   }
 /*members-wrapper css end*/
+
+/*contact-wrapper css start*/
+.form-contents input{
+  width: 60vw;
+}
+
+.form-contents textarea{
+  width: 60vw;
+}
+/*contact-wrapper css end*/
 }
 
 @media screen and (max-width: 480px) {
@@ -184,4 +194,14 @@
 /*members-wrapper css start*/
 
 /*members-wrapper css end*/
+
+/*contact-wrapper css start*/
+.form-contents input{
+  width: 70vw;
+}
+
+.form-contents textarea{
+  width: 70vw;
+}
+/*contact-wrapper css end*/
 }

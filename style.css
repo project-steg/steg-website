@@ -623,6 +623,45 @@ label:focus {
   justify-content: center;
   align-items: center;
 }
+
+.form-contents input{
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-size: 15px;
+  width: 50vw;
+  height: 2em;
+  margin: 10px;
+}
+
+.form-contents textarea{
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-size: 15px;
+  width: 50vw;
+  height: 6em;
+  margin: 10px 10px 20px;
+}
+
+.form-button{
+  width: 4em;
+  height: 2.5em;
+  text-align: center;
+  border: 2px solid #20d8ba;
+  color: #20d8ba;
+  background-color: #eeeeee;
+  text-decoration: none;
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.form-button:hover{
+  background-color: #20d8ba;
+  border-color: #189f88;
+  color: #FFF;
+}
 /*contact-wrapper css end*/
 
 /*footer css start*/
@@ -665,10 +704,10 @@ footer{
 .copyright{
   font-family: "Noto Sans JP";
   font-weight: 400;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(6px + 0.5vw);
   text-align: center;
   color: #ffffff;
-  padding: 2vw;
+  padding: 20px;
 
 }
 /*footer css end*/
