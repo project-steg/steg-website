@@ -613,3 +613,51 @@ label:focus {
 }
 
 /*contact-wrapper css end*/
+
+/*footer css start*/
+
+footer{
+  background: #404040;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: end;
+}
+
+.footer-left ul{
+  list-style: none;
+}
+.footer-left ul li a{
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-size: calc(10px + 0.5vw);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-left{
+  padding: 2vw;
+}
+
+.footer-right{
+  padding: 2vw;
+  display: flex;
+  justify-content: end;
+}
+
+.twitter-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.copyright{
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-size: calc(10px + 0.5vw);
+  text-align: center;
+  color: #ffffff;
+  padding: 2vw;
+
+}
+/*footer css end*/
