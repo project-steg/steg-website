@@ -1,17 +1,23 @@
 $(window).scroll(function(){
-    var top1 = $(".about-wrapper").offset().top;
+    var top1 = $(".about").offset().top;
     var position1 = top1 - $(window).height();
-    var top2 = $(".partners-wrapper").offset().top;
+    var top2 = $(".partners").offset().top;
     var position2 = top2 - $(window).height();
-    var top3 = $(".members-wrapper").offset().top;
+    var top3 = $(".members").offset().top;
     var position3 = top3 - $(window).height();
-    var top4 = $(".contact-wrapper").offset().top;
+    var top4 = $(".contact").offset().top;
     var position4 = top4 - $(window).height();
     
     if($(window).scrollTop() > position1){
         $('.list-about a').css('color', '#20d8ba');
+
+        $(".triangle").addClass("triangle-move");
+        $(".header-logo").addClass("header-logo-move");
     }else{
         $('.list-about a').css('color', '#404040');
+
+        $(".triangle").removeClass("triangle-move");
+        $(".header-logo").removeClass("header-logo-move");
     }
 
     if($(window).scrollTop() > position2){
