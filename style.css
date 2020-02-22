@@ -653,6 +653,7 @@ label:focus {
   width: 50vw;
   height: 6em;
   margin: 10px 10px 20px;
+  resize: none;
 }
 
 .form-button{
