@@ -19,8 +19,16 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158924272-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158924272-1');
+    </script>
     <title>Steg公式ホームページ</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -217,15 +225,15 @@
         <div class="triangle-top-g"></div>
         <div class="wrapper-title contact">Contact</div>
         <div class="contact-container">
-            <form>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfekmFwZc4Lr3STHXnoHMkbgsxeyiGvUxABxhXf28Sx795gcg/formResponse" method="POST">
                 <div class="form-contents">
-                    <input type="text" placeholder="メールアドレス"/>
+                    <input type="text" placeholder="メールアドレス" name="entry.222640255" />
                 </div>
                 <div class="form-contents">
-                    <input type="text" placeholder="氏名"/>
+                    <input type="text" placeholder="氏名" name="entry.1220325291" />
                 </div>
                 <div class="form-contents">
-                    <textarea placeholder="お問い合わせ内容"></textarea>
+                    <textarea placeholder="お問い合わせ内容" name="entry.264940659"></textarea>
                 </div>
                 <button type="submit" class="form-button">送信</button>
             </form>
@@ -249,6 +257,7 @@
         </div>
         <div class="copyright">Copyright © 2020 Steg All Rights Reserved.</div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
