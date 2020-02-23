@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
     <meta name="description"
         content="学生ITエンジニア団体「Steg」公式ホームページ。Web制作案件の受託や、iOSアプリ開発の受託などを行なっています。学生がエンジニアリングを通して、社会に様々な挑戦をしていきます。">
     <meta property="og:site_name" content="Steg | 学生ITエンジニア団体">
@@ -16,17 +16,248 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="@Steg_official">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158924272-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158924272-1');
+    </script>
     <title>Steg公式ホームページ</title>
 </head>
 
 <body>
-    <div class="index">
+    <div class="index" style="display: none;">
         <div class="site-logo">
             <img src="img/site-logo-center.png" alt="Steg" id="logo">
             <p class="description">現在メンテナンス中です。</p>
         </div>
     </div>
-</body>
 
+    <header>
+        <div class="header-left">
+            <div class="triangle"></div>
+            <a href="#top"><img src="img/Steg-logo.png" alt="Steg" class="header-logo"></a>
+        </div>
+
+        <div class="header-right">
+            <div class="header-websize">
+                <ul>
+                    <li><div class="list-about"><a href="#about">About</a></div></li>
+                    <li><div class="list-partners"><a href="#partners">Partners</a></div></li>
+                    <li><div class="list-members"><a href="#members">Members</a></div></li>
+                    <li><div class="list-contact"><a href="#contact">Contact</a></div></li>
+                </ul>
+            </div>
+
+            <div class="header-responsive">
+                <nav>
+                    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+                    <div class="menu">
+                      <label class="menu-toggle" for="menu">
+                        <span class="menu-toggle-grippy">Toggle</span>
+                      </label>
+                      <ul>
+                        <li><a href="#top"><img src="img/Steg-logo-white.png" alt="Steg" class="header-menu-logo"></a></li>
+                        <li><div class="pl-tw"><a href="#about">About</a></div></li>
+                        <li><div class="pl-tw"><a href="#partners">Partners</a></div></li>
+                        <li><div class="pl-tw"><a href="#members">Members</a></div></li>
+                        <li><div class="pl-tw"><a href="#contact">Contact</a></div></li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="top" class="top-wrapper">
+        <p class="tagline">学生の未来に自由な選択肢を</p>
+        <img src="img/Steg-logo.png" alt="Steg" class="top-wrapper-logo">
+    </div>
+
+    <div id="about" class="about-wrapper">
+        <div class="wrapper-title about">About</div>
+        <div class="about-steg">Stegは、ITエンジニアリングなどを通して社会に挑戦をし、成長の過程を大切にする学生ITエンジニア団体です。</div>
+        <div class="about-container">
+            <div class="about-contents">
+                <img src="img/portfolio.png" alt="ポートフォリオ強化" class="about-img responsive-left-img">
+                <div class="about-label">
+                    <div class="about-title-long">ポートフォリオ強化</div>
+                    <div class="about-text">実務経験を通して、自身のポートフォリオを強化し、就活においての選択肢を自由にします。</div>
+                </div>
+            </div>
+            <div class="about-contents">
+                <div class="about-label">
+                    <div class="about-title-short">学習支援</div>
+                    <div class="about-text">内部メンターによるアドバイスなどの支援を気軽に受けることができます。</div>
+                </div>
+                <img src="img/learning.png" alt="学習支援" class="about-img responsive-right-img">
+            </div>
+            <div class="about-contents">
+                <img src="img/company.png" alt="企業とのマッチング" class="about-img responsive-left-img">
+                <div class="about-label">
+                    <div class="about-title-long">企業とのマッチング</div>
+                    <div class="about-text">就活における選択肢の1つとして、実績のある学生と企業のマッチングを行っています。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="partners" class="partners-wrapper">
+        <div class="triangle-top-g"></div>
+        <div class="wrapper-title partners">Partners</div>
+        <div class="partners-container">
+            <div class="partners-contents">
+                <img src="img/CREGG.png" alt="CREGG" class="partners-logo">
+                <div class="partners-label">
+                    <div class="partners-name">株式会社CREGG</div>
+                    <div class="partners-description">「アイディアと世界をマッチさせる」というタグラインを掲げる、アイディア投稿型プラットホームを運営。<br>プロトタイプ制作をStegが担当。</div>
+                </div>
+            </div>
+            <div class="partners-contents">
+                <img src="img/e-SEEDs.png" alt="e-SEEDs" class="partners-logo">
+                <div class="partners-label">
+                    <div class="partners-name">e-SEEDs</div>
+                    <div class="partners-description">e-Sportsイベントオーガナイズ団体。主にPUBGの「マネーロワイアル」という大会を開催している。<br>Web制作などをStegが担当。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="members" class="members-wrapper">
+        <div class="triangle-top-w"></div>
+        <div class="wrapper-title members">Members</div>
+        <input id="trigger1" class="grad-trigger" type="checkbox">
+        <div class="grad-item">
+            <div class="members-container">
+                <a href="#!">
+                     <div class="members-contents">
+                        <div class="img-shadow"><img src="img/nakao-kego.png" class="circle" alt="中尾圭吾"></div>
+                        <div class="members-text">
+                            <p>代表</p>
+                            <p>中尾 圭吾</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://920oj.net/" target="_blank" rel="noopener">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/oiwa-junya.png" class="circle" alt="大岩潤矢"></div>
+                        <div class="members-text">
+                            <p>技術統括</p>
+                            <p>大岩 潤矢</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#!">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/anzai-kouki.png" class="circle" alt="安西鴻輝"></div>
+                        <div class="members-text">
+                            <p>デザイナー</p>
+                            <p>フロントエンド</p>
+                            <p>安西 鴻輝</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#!">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/shinozaki-reiji.png" class="circle" alt="篠崎玲士"></div>
+                        <div class="members-text">
+                            <p>フロントエンド</p>
+                            <p>篠崎 玲士</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://sftn0928.netlify.com" target="_blank" rel="noopener">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/kobayashi-yousuke.png" class="circle" alt="小林陽佑"></div>
+                        <div class="members-text">
+                            <p>フロントエンド</p>
+                            <p>小林 陽佑</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#!">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/tanaka-masato.png" class="circle" alt="田中雅人"></div>
+                        <div class="members-text">
+                            <p>フロントエンド</p>
+                            <p>田中 雅人</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#!">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/yano-kyotaro.png" class="circle" alt="矢野京太郎"></div>
+                        <div class="members-text">
+                            <p>フロントエンド</p>
+                            <p>矢野 京太郎</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#!">
+                    <div class="members-contents">
+                        <div class="img-shadow"><img src="img/majima-nagisa.png" class="circle" alt="間嶋渚紗"></div>
+                        <div class="members-text">
+                            <p>デザイナー</p>
+                            <p>間嶋 渚紗</p>
+                        </div>
+                    </div>
+                </a>
+            
+            </div>
+        </div>
+        <label class="grad-btn" for="trigger1"></label>
+    </div>
+
+    <div id="contact" class="contact-wrapper">
+        <div class="triangle-top-g"></div>
+        <div class="wrapper-title contact">Contact</div>
+        <div class="contact-container">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfekmFwZc4Lr3STHXnoHMkbgsxeyiGvUxABxhXf28Sx795gcg/formResponse" method="POST">
+                <div class="form-contents">
+                    <input type="text" placeholder="メールアドレス" name="entry.222640255" />
+                </div>
+                <div class="form-contents">
+                    <input type="text" placeholder="氏名" name="entry.1220325291" />
+                </div>
+                <div class="form-contents">
+                    <textarea placeholder="お問い合わせ内容" name="entry.264940659"></textarea>
+                </div>
+                <button type="submit" class="form-button">送信</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#" title="Top">Top</a></li>
+                    <li><a href="#about" title="About">About</a></li>
+                    <li><a href="#partners" title="Partners">Partners</a></li>
+                    <li><a href="#members" title="Members">Members</a></li>
+                    <li><a href="#contact" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <a href="https://twitter.com/Steg_official" target="_blank" rel="noopener"><img src="img/iconmonstr-twitter-white.png" alt="twitter" class="twitter-icon"></a>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2020 Steg All Rights Reserved.</div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
 </html>

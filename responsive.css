@@ -1,0 +1,207 @@
+@media screen and (max-width: 1000px) {
+/*header css start*/
+.header-left{
+    display: none;
+}
+
+.header-websize{
+    display: none;
+}
+
+.header-responsive{
+    display: block;
+}
+/*header css end*/
+
+/*top-wrapper css start*/
+.tagline{
+    font-size: 25px;
+}
+
+.top-wrapper-logo{
+    width: 370px;
+    height: auto;
+}
+/*top-wrapper css end*/
+
+/*about-wrapper css start*/
+.about-img{
+    height: 30vw;
+    width: 30vw;
+}
+/*about-wrapper css end*/
+
+/*partners-wrapper css start*/
+.partners-logo{
+    width: calc(180px + 1vw);
+  }
+/*partners-wrapper css end*/
+
+/*members-wrapper css start*/
+.members-container a{
+    text-decoration: none;
+}
+
+.members-contents{
+    position: static;
+    flex-direction: row;
+    width : calc(135px + 9vw);
+    height: calc(60px + 4vw);
+    background: #404040;
+    border-radius: calc(60px + 4vw);
+    margin: 2vw;
+}
+
+.circle{
+    width : calc(60px + 4vw);
+    height: calc(60px + 4vw);
+}
+
+.img-shadow{
+    width : calc(60px + 4vw);
+    height: calc(60px + 4vw);
+    box-shadow: 0 0 0 0 rgb(0,0,0,0);
+}
+
+.members-contents:hover .img-shadow{
+    box-shadow: 0 0 0 0 rgb(0,0,0,0);
+}
+
+.members-contents:hover .circle{
+    position: static;
+    z-index: 1;
+}
+
+.members-text{
+    position: static;
+    width: calc(60px + 4vw);
+    height: calc(60px + 4vw);
+    font-size: calc(8px + 0.4vw);
+    color: #ffffff;
+}
+  
+.grad-btn{
+  width: 4em;
+  height: 1.2em;
+  font-family: "Noto Sans JP";
+  font-size: calc(12px + 1vw);
+  font-weight: 400;
+  color: #404040;
+  border-bottom: 3px solid rgb(32,216,186,0.5);
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+  .grad-btn::before {
+    content: "OPEN";
+  }
+  .grad-item {
+    position: relative;
+    overflow: hidden;
+    height: calc(260px + 10vw); /*隠した状態の高さ*/
+  }
+  .grad-item::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /*グラデーションで隠す高さ*/
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    content: "";
+  }
+  .grad-trigger {
+    display: none; /*チェックボックスは常に非表示*/
+  }
+  .grad-trigger:checked ~ .grad-btn::before {
+    content: "CLOSE"; /*チェックされていたら、文言を変更する*/
+  }
+  .grad-trigger:checked ~ .grad-item {
+    height: auto; /*チェックされていたら、高さを戻す*/
+  }
+  .grad-trigger:checked ~ .grad-item::before {
+    display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+  }
+/*members-wrapper css end*/
+
+/*contact-wrapper css start*/
+.form-contents input{
+  width: 60vw;
+}
+
+.form-contents textarea{
+  width: 60vw;
+}
+/*contact-wrapper css end*/
+}
+
+@media screen and (max-width: 480px) {
+/*header start*/
+.menu ul li a{
+    color: #ffffff;
+}
+/*header end*/
+
+/*top-wrapper css start*/
+.tagline{
+    font-size: 21px;
+}
+
+.top-wrapper-logo{
+    width: 300px;
+    height: auto;
+}
+
+/*top-wrapper css end*/
+
+/*about-wrapper css start*/
+.about-img{
+    height: 40vw;
+    width: 40vw;
+}
+/*about-wrapper css end*/
+
+/*partners-wrapper css start*/
+.triangle-top-g{     /*[all css] triangle-top*/
+    border-top: 12vh solid #ffffff;
+  }
+  
+  .triangle-top-w{     /*[all css] triangle-top*/
+    border-top: 12vh solid #eeeeee;
+  }
+
+.partners-contents{
+    flex-direction : column;
+}
+
+.partners-label{
+    width: 80%;
+    text-align: center;
+}
+
+.partners-logo{
+    width: 35vw;
+}
+
+.partners-name{
+    text-align: center;
+}
+/*partners-wrapper css end*/
+
+/*members-wrapper css start*/
+
+/*members-wrapper css end*/
+
+/*contact-wrapper css start*/
+.form-contents input{
+  width: 70vw;
+}
+
+.form-contents textarea{
+  width: 70vw;
+}
+/*contact-wrapper css end*/
+}
