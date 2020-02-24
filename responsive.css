@@ -1,3 +1,9 @@
+@media screen and (max-width: 1024px) {
+  .top-wrapper {
+    background-attachment: scroll;
+  }
+}
+
 @media screen and (max-width: 1000px) {
 /*header css start*/
 .header-left{
