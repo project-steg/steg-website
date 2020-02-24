@@ -129,11 +129,11 @@
 
 /*contact-wrapper css start*/
 .form-contents input{
-  width: 60vw;
+  width: 75vw;
 }
 
 .form-contents textarea{
-  width: 60vw;
+  width: 75vw;
 }
 /*contact-wrapper css end*/
 }
@@ -197,11 +197,13 @@
 
 /*contact-wrapper css start*/
 .form-contents input{
-  width: 70vw;
+  width: 85vw;
+  padding: 0;
 }
 
 .form-contents textarea{
-  width: 70vw;
+  width: 85vw;
+  padding: 0;
 }
 /*contact-wrapper css end*/
 }
