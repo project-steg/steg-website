@@ -123,6 +123,13 @@ section {
     font-weight: 900;
 }
 
+.finished {
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-align: center;
+    color: red;
+}
+
 /* フッター */
 footer {
     background-color: #282828;
