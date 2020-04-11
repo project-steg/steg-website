@@ -135,15 +135,19 @@
         <input id="trigger1" class="grad-trigger" type="checkbox">
         <div class="grad-item">
             <div class="members-container">
-                <a :href="elem.website" target="_blank" rel="noopener" v-for="elem in members">
-                     <div class="members-contents">
-                        <div class="img-shadow"><img :src="elem.img.url" class="circle" :alt="elem.name"></div>
-                        <div class="members-text">
-                            <p>{{elem.position}}</p>
-                            <p>{{elem.name}}</p>
+                <div v-for="elem in members">
+                    <a :href="elem.website" target="_blank" rel="noopener">
+                        <div class="members-contents">
+                            <div class="img-shadow">
+                                <img :src="elem.img.url" class="circle" :alt="elem.name">
+                            </div>
+                            <div class="members-text">
+                                <p>{{elem.position}}</p>
+                                <p>{{elem.name}}</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
         <label class="grad-btn" for="trigger1"></label>
@@ -190,24 +194,26 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-<script>
-	new Vue({
-		el: '#members',
-		data:{
-		  members:[],
-    },
-    mounted() {
-        axios.get('https://steg.microcms.io/api/v1/members',{
-            headers: {'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'}
-    })
-    .then(response => {
-		this.members = response.data.contents
-    })
-    .catch(error => {
-        console.log('error')
-    })
-  }
-})
-</script>
+    <script>
+	    new Vue({
+	        el: '#members',
+	        data:{
+	            members:[],
+            },
+            mounted() {
+                axios.get('https://steg.microcms.io/api/v1/members',{
+                    headers: {
+                        'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'
+                    }
+                })
+                .then(response => {
+                    this.members = response.data.contents
+                })
+                .catch(error => {
+                    console.log('error')
+                })
+            }
+        })
+    </script>
 </body>
 </html>
