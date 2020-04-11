@@ -202,13 +202,14 @@
 	            members:[],
             },
             mounted() {
-                axios.get('https://steg.microcms.io/api/v1/members',{
+                axios.get('https://steg.microcms.io/api/v1/members?limit=99',{
                     headers: {
                         'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'
                     }
                 })
                 .then(response => {
                     this.members = response.data.contents
+                    console.log(this.members)
                 })
                 .catch(error => {
                     console.log('error')
