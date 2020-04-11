@@ -135,158 +135,15 @@
         <input id="trigger1" class="grad-trigger" type="checkbox">
         <div class="grad-item">
             <div class="members-container">
-                <a href="#!">
+                <a :href="elem.website" target="_blank" rel="noopener" v-for="elem in members">
                      <div class="members-contents">
-                        <div class="img-shadow"><img src="img/nakao-kego.jpg" class="circle" alt="中尾圭吾"></div>
+                        <div class="img-shadow"><img :src="elem.img.url" class="circle" :alt="elem.name"></div>
                         <div class="members-text">
-                            <p>代表</p>
-                            <p>中尾 圭吾</p>
+                            <p>{{elem.position}}</p>
+                            <p>{{elem.name}}</p>
                         </div>
                     </div>
                 </a>
-
-                <a href="https://920oj.net/" target="_blank" rel="noopener">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/oiwa-junya.jpg" class="circle" alt="大岩潤矢"></div>
-                        <div class="members-text">
-                            <p>技術統括</p>
-                            <p>大岩 潤矢</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/anzai-kouki.jpg" class="circle" alt="安西鴻輝"></div>
-                        <div class="members-text">
-                            <p>デザイナー</p>
-                            <p>フロントエンド</p>
-                            <p>安西 鴻輝</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/yamada-hiroaki.jpg" class="circle" alt="山田寛顕"></div>
-                       <div class="members-text">
-                           <p>フロントエンド</p>
-                           <p>山田 寛顕</p>
-                       </div>
-                   </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/kiyoura-shun.jpg" class="circle" alt="清浦駿"></div>
-                       <div class="members-text">
-                           <p>iOSアプリ</p>
-                           <p>エンジニア</p>
-                           <p>清浦 駿</p>
-                       </div>
-                   </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/shinozaki-reiji.jpg" class="circle" alt="篠崎玲士"></div>
-                        <div class="members-text">
-                            <p>フロントエンド</p>
-                            <p>篠崎 玲士</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://sftn0928.netlify.com" target="_blank" rel="noopener">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/kobayashi-yousuke.jpg" class="circle" alt="小林陽佑"></div>
-                        <div class="members-text">
-                            <p>フロントエンド</p>
-                            <p>小林 陽佑</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/tanaka-masato.jpg" class="circle" alt="田中雅人"></div>
-                        <div class="members-text">
-                            <p>フロントエンド</p>
-                            <p>田中 雅人</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/yano-kyotaro.jpg" class="circle" alt="矢野京太郎"></div>
-                        <div class="members-text">
-                            <p>フロントエンド</p>
-                            <p>矢野 京太郎</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/kume-jun.jpg" class="circle" alt="久米淳"></div>
-                       <div class="members-text">
-                           <p>フロントエンド</p>
-                           <p>久米 淳</p>
-                       </div>
-                   </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/saito-yuto.jpg" class="circle" alt="斉藤勇人"></div>
-                       <div class="members-text">
-                           <p>フロントエンド</p>
-                           <p>斉藤 勇人</p>
-                       </div>
-                   </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/shinjou-sakura.jpg" class="circle" alt="シンジョウサクラ"></div>
-                       <div class="members-text">
-                           <p>デザイナー</p>
-                           <p>シンジョウサクラ</p>
-                       </div>
-                   </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                        <div class="img-shadow"><img src="img/majima-nagisa.jpg" class="circle" alt="間嶋渚紗"></div>
-                        <div class="members-text">
-                            <p>デザイナー</p>
-                            <p>間嶋 渚紗</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/tanigawa-noa.jpg" class="circle" alt="谷川野亜"></div>
-                       <div class="members-text">
-                           <p>デザイナー</p>
-                           <p>谷川 野亜</p>
-                       </div>
-                   </div>
-                </a>
-
-                <a href="#!">
-                    <div class="members-contents">
-                       <div class="img-shadow"><img src="img/ririka.jpg" class="circle" alt="RIRIKA"></div>
-                       <div class="members-text">
-                           <p>デザイナー</p>
-                           <p>RIRIKA</p>
-                       </div>
-                   </div>
-                </a>
-            
             </div>
         </div>
         <label class="grad-btn" for="trigger1"></label>
@@ -330,5 +187,27 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+<script>
+	new Vue({
+		el: '#members',
+		data:{
+		  members:[],
+    },
+    mounted() {
+        axios.get('https://steg.microcms.io/api/v1/members',{
+            headers: {'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'}
+    })
+    .then(response => {
+		this.members = response.data.contents
+    })
+    .catch(error => {
+        console.log('error')
+    })
+  }
+})
+</script>
 </body>
 </html>
