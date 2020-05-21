@@ -422,7 +422,7 @@ label:focus {
 }
 /*top-wrapper css end*/
 
-/*about-wrapper css start*/
+/*news-wrapper css start*/
 .wrapper-title {
   /*[all css] wrapper-title*/
   width: 5em;
@@ -435,6 +435,42 @@ label:focus {
   margin-left: 10%;
 }
 
+.news-container{
+  padding: 0.5em 1.5em 2em 1.5em;
+  margin: 2em 0;
+  color: #404040;
+  background-color: #fff;
+  border: solid 2px #cccccc;
+  border-radius: 10px;
+  margin: 4em 10%;
+}
+
+.news-table{
+  border-spacing: 0 15px;
+  border-collapse: separate;
+  width: 100%;
+}
+
+.news-text{
+  height: 35px;
+}
+
+.underline{
+  border-bottom: 2px solid #eeeeee;
+}
+
+.news-days{
+  border-bottom: solid 2px rgb(32, 216, 186, 0.5);
+  text-align: center;
+  width: 5%;
+}
+
+.news-bars{
+  padding: 0 5px;
+}
+/*news-wrapper css end*/
+
+/*about-wrapper css start*/
 .about-wrapper {
   padding-top: calc(16vw - 4vh);
   padding-bottom: calc(8vw - 2vh);
