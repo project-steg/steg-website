@@ -108,6 +108,23 @@
         </div>
     </div>
 
+    <div id="works" class="works-wrapper">
+        <div class="triangle-top-w"></div>
+        <div class="wrapper-title works">Works</div>
+        <div class="works-container">
+            <div v-for="work in works">
+                <div class="works-cord">
+                    <img :src="work.worksImg.url" class="square" alt="イメージ画像">
+                    <div class="works-cord-content">
+                        <p class="works-title">{{ work.worksTitle }}</p>
+                        <p class="works-content">{{ work.worksContents }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <div id="partners" class="partners-wrapper">
         <div class="triangle-top-g"></div>
         <div class="wrapper-title partners">Partners</div>
@@ -213,6 +230,25 @@
                 .catch(error => {
                     console.log('error')
                 })
+            }
+        }),
+        new Vue({
+            el: '#works',
+            data: {
+                works: []
+            },
+            mounted() {
+                axios.get('https://steg.microcms.io/api/v1/works?limit=10', {
+                    headers: {
+                        'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'
+                        }
+                    })
+                    .then(response => {
+                        this.works = response.data.contents
+                    })
+                    .catch(error => {
+                        console.log('error')
+                    })
             }
         })
     </script>
