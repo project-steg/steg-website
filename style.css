@@ -514,7 +514,7 @@ label:focus {
 }
 
 .square {
-  width: calc(100% - 60%);
+  width: calc(100% - 55%);
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -528,8 +528,15 @@ label:focus {
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 2vh;
-  /* border-bottom: solid 2px rgb(32,216,186,0.5); */
-  /* border-bottom: solid 2px #eeee; */
+}
+
+.works-cord-content::after{
+  content: "";
+  margin-top: -24.5px;
+  display: block;
+  height: 2px;
+  width: 15%;
+  background:rgb(32, 216, 186, 0.5);
 }
 
 .works-title:after {
@@ -538,7 +545,7 @@ label:focus {
   display: block;
   height: 2px;
   width: 100%;
-  background: linear-gradient(to left, #eeee 5%, rgb(32, 216, 186, 0.5));
+  background: #eeee;
 }
 
 .works-content {

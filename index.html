@@ -113,13 +113,15 @@
         <div class="wrapper-title works">Works</div>
         <div class="works-container">
             <div v-for="work in works">
-                <div class="works-cord">
-                    <img :src="work.worksImg.url" class="square" alt="イメージ画像">
-                    <div class="works-cord-content">
-                        <p class="works-title">{{ work.worksTitle }}</p>
-                        <p class="works-content">{{ work.worksContents }}</p>
+                <!-- <a class="works-link" :href="workURL"> -->
+                    <div class="works-cord">
+                        <img :src="work.worksImg.url" class="square" alt="イメージ画像">
+                        <div class="works-cord-content">
+                            <p class="works-title">{{ work.worksTitle }}</p>
+                            <p class="works-content">{{ work.worksContents }}</p>
+                        </div>
                     </div>
-                </div>
+                <!-- </a> -->
             </div>
         </div>
     </div>
