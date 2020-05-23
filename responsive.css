@@ -30,6 +30,10 @@
 }
 /*top-wrapper css end*/
 
+/*news-wrapper css start*/
+
+/*news-wrapper css end*/
+
 /*about-wrapper css start*/
 .about-img{
     height: 30vw;
@@ -38,8 +42,9 @@
 /*about-wrapper css end*/
 
 /*works-wrapper css start */
-
-
+.works-contents{
+  display: none;
+}
 /*works-wrapper css end */
 
 /*partners-wrapper css start*/

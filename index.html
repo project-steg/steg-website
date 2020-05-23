@@ -66,7 +66,9 @@
                       </label>
                       <ul>
                         <li><a href="#top"><img src="img/Steg-logo-white.png" alt="Steg" class="header-menu-logo"></a></li>
+                        <li><div class="pl-tw"><a href="#news">News</a></div></li>
                         <li><div class="pl-tw"><a href="#about">About</a></div></li>
+                        <li><div class="pl-tw"><a href="#works">Works</a></div></li>
                         <li><div class="pl-tw"><a href="#partners">Partners</a></div></li>
                         <li><div class="pl-tw"><a href="#members">Members</a></div></li>
                         <li><div class="pl-tw"><a href="#contact">Contact</a></div></li>
@@ -82,20 +84,15 @@
         <img src="img/Steg-logo.png" alt="Steg" class="top-wrapper-logo">
     </div>
 
-    <div id="news">
+    <div id="news" class="news-wrapper">
         <div class="wrapper-title news">News</div>
         <div class="news-container">
             <div class="news-contents">
                 <table class="news-table">
-                    <tr class="news-text">
-                        <td class="underline news-days">5/1</td>
+                    <tr class="news-text" v-for="lastest in news">
+                        <td class="underline news-days">{{ lastest.newsDate }}</td>
                         <td class="underline news-bar">-</td>
-                        <td class="underline">株式会社TechBowlさんとアンバサダー提携</td>
-                    </tr>
-                    <tr class="news-text">
-                        <td class="underline news-days">2/23</td>
-                        <td class="underline news-bar">-</td>
-                        <td class="underline">株式会社CREGG主催Web開発ハッカソン開催</td>
+                        <td class="underline">{{ lastest.newsContents }}</td>
                     </tr>
                 </table>
             </div>
@@ -103,6 +100,7 @@
     </div>
 
     <div id="about" class="about-wrapper">
+        <div class="triangle-top-g"></div>
         <div class="wrapper-title about">About</div>
         <div class="about-steg">Stegは、ITエンジニアリングなどを通して社会に挑戦をし、成長の過程を大切にする学生ITエンジニア団体です。</div>
         <div class="about-container">
@@ -219,7 +217,9 @@
             <div class="footer-left">
                 <ul>
                     <li><a href="#" title="Top">Top</a></li>
+                    <li><a href="#news" title="news">News</a></li>
                     <li><a href="#about" title="About">About</a></li>
+                    <li><a href="#works" title="Works">Works</a></li>
                     <li><a href="#partners" title="Partners">Partners</a></li>
                     <li><a href="#members" title="Members">Members</a></li>
                     <li><a href="#contact" title="Contact">Contact</a></li>
@@ -236,45 +236,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-    <script>
-	    new Vue({
-	        el: '#members',
-	        data:{
-	            members:[],
-            },
-            mounted() {
-                axios.get('https://steg.microcms.io/api/v1/members?limit=99',{
-                    headers: {
-                        'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'
-                    }
-                })
-                .then(response => {
-                    this.members = response.data.contents
-                })
-                .catch(error => {
-                    console.log('error')
-                })
-            }
-        }),
-        new Vue({
-            el: '#works',
-            data: {
-                works: []
-            },
-            mounted() {
-                axios.get('https://steg.microcms.io/api/v1/works?limit=10', {
-                    headers: {
-                        'X-API-KEY': '15fcbc0e-ef8a-4e6f-8111-0811e534fe5d'
-                        }
-                    })
-                    .then(response => {
-                        this.works = response.data.contents
-                    })
-                    .catch(error => {
-                        console.log('error')
-                    })
-            }
-        })
-    </script>
+    <script src="vue.js"></script>
 </body>
 </html>

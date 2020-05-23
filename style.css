@@ -435,6 +435,12 @@ label:focus {
   margin-left: 10%;
 }
 
+.news-wrapper {
+  padding-top: calc(16vw - 4vh);
+  padding-bottom: calc(8vw - 2vh);
+  overflow: hidden;
+}
+
 .news-container{
   padding: 0.5em 1.5em 2em 1.5em;
   margin: 2em 0;
@@ -452,7 +458,8 @@ label:focus {
 }
 
 .news-text{
-  height: 35px;
+  height: 2em;
+  font-size: calc(10px + 0.8vw);
 }
 
 .underline{
@@ -465,14 +472,14 @@ label:focus {
   width: 5%;
 }
 
-.news-bars{
-  padding: 0 5px;
+.news-bar{
+  padding: 0 10px;
+  text-align: center;
 }
 /*news-wrapper css end*/
 
 /*about-wrapper css start*/
 .about-wrapper {
-  padding-top: calc(16vw - 4vh);
   padding-bottom: calc(8vw - 2vh);
   background: #eeeeee;
   overflow: hidden;
@@ -561,34 +568,26 @@ label:focus {
 }
 
 .works-title {
-  font-size: 20px;
   font-weight: 400;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
+  border-bottom: solid 2px rgb(32, 216, 186, 0.5);
+  position: relative;
+  width: 35vw;
+  font-size: calc(10px + 0.8vw);
 }
 
-.works-cord-content::after{
+.works-title:after{
   content: "";
-  margin-top: -24.5px;
-  display: block;
-  height: 2px;
-  width: 15%;
-  background:rgb(32, 216, 186, 0.5);
-}
-
-.works-title:after {
-  content: "";
-  margin-top: 2vh;
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: #eeee;
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 90%;
+  border-bottom: solid 2px #eeeeee;
 }
 
 .works-content {
   margin: 1.5vh 0;
 }
-
-
 /*works-wrapper css end*/
 
 /*partners-wrapper css start*/
