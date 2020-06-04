@@ -223,28 +223,28 @@ select {
 /*index css end*/
 
 /*header css start*/
-header{
+header {
   height: 0;
   position: fixed;
   z-index: 100;
 }
 /*header-left start*/
-.header-left{
+.header-left {
   display: flex;
   justify-content: flex-start;
   position: relative;
   z-index: 101;
 }
-.triangle{
+.triangle {
   border-bottom: 220px solid transparent;
   border-left: 420px solid #ffffff;
-  opacity:0.9;
+  opacity: 0.9;
   position: absolute;
   top: -220px;
   left: 0;
   transition: top 1s;
 }
-.header-logo{
+.header-logo {
   width: 200px;
   height: 110px;
   position: absolute;
@@ -253,18 +253,18 @@ header{
   cursor: pointer;
   transition: top 0.5s;
 }
-.triangle-move{
+.triangle-move {
   top: 0;
   transition: top 1s;
 }
-.header-logo-move{
+.header-logo-move {
   top: 5px;
   transition: top 1.5s;
 }
 /*.header-left end*/
 
 /*.header-websize start*/
-.header-websize{
+.header-websize {
   position: fixed;
   top: 0;
   width: 100%;
@@ -272,7 +272,7 @@ header{
   list-style: none;
 }
 
-.header-websize ul{
+.header-websize ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -280,7 +280,7 @@ header{
   padding-right: 10px;
 }
 
-.header-websize ul li a{
+.header-websize ul li a {
   font-family: "Noto Sans JP";
   font-weight: 400;
   text-decoration: none;
@@ -291,11 +291,11 @@ header{
 /*.header-websize end*/
 
 /*header-responsive start*/
-.header-responsive{
+.header-responsive {
   display: none;
 }
 
-.header-menu-logo{
+.header-menu-logo {
   width: 120px;
   height: auto;
   cursor: pointer;
@@ -304,7 +304,7 @@ header{
 .menu-toggle {
   color: #404040;
   cursor: pointer;
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
 }
 
 .menu-toggle-grippy {
@@ -324,7 +324,7 @@ header{
   height: 5px;
 }
 
-nav{
+nav {
   height: 0;
 }
 label {
@@ -352,18 +352,19 @@ label:focus {
   padding: 0;
 }
 
-.menu ul{
+.menu ul {
   margin: 16px 0;
   padding: 0;
 }
 
-.pl-tw{
+.pl-tw {
   padding-left: 20px;
 }
-.menu ul li a, .menu ul li label {
+.menu ul li a,
+.menu ul li label {
   display: block;
   text-align: left;
-  padding-left:40px;
+  padding-left: 40px;
   line-height: 60px;
   text-decoration: none;
   color: #999;
@@ -372,10 +373,11 @@ label:focus {
   font-family: "Noto Sans JP";
   font-weight: 400;
 }
-.menu ul li{
+.menu ul li {
   list-style: none;
 }
-.menu ul li a:hover, .menu ul li label:hover {
+.menu ul li a:hover,
+.menu ul li label:hover {
   color: #fff;
 }
 /* hide inputs */
@@ -387,7 +389,7 @@ label:focus {
   background: none;
 }
 /* fade in checked menu */
-.menu-checkbox:checked + .menu{
+.menu-checkbox:checked + .menu {
   transform: translate3d(0, 0, 0);
 }
 /*nav end*/
@@ -403,91 +405,136 @@ label:focus {
   background-size: cover;
   text-align: center;
   display: flex;
-  flex-direction : column;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-attachment: fixed;
 }
 
-.tagline{
+.tagline {
   font-family: "Noto Sans JP";
   font-size: 2.5vw;
 }
 
-.top-wrapper-logo{
+.top-wrapper-logo {
   width: 36vw;
   height: auto;
 }
 /*top-wrapper css end*/
 
-/*about-wrapper css start*/
-.wrapper-title{       /*[all css] wrapper-title*/
+/*news-wrapper css start*/
+.wrapper-title {
+  /*[all css] wrapper-title*/
   width: 5em;
   height: 1.1em;
   font-family: "Noto Sans JP";
   font-size: calc(20px + 2vw);
   font-weight: 700;
   color: #404040;
-  border-bottom: 0.2em solid rgb(32,216,186,0.5);
+  border-bottom: 0.2em solid rgb(32, 216, 186, 0.5);
   margin-left: 10%;
 }
 
-.about-wrapper{
+.news-wrapper {
   padding-top: calc(16vw - 4vh);
   padding-bottom: calc(8vw - 2vh);
+  overflow: hidden;
 }
 
-.about-steg{
+.news-container{
+  padding: 0.5em 1.5em 2em 1.5em;
+  margin: 2em 0;
+  color: #404040;
+  background-color: #fff;
+  border: solid 2px #cccccc;
+  border-radius: 10px;
+  margin: 4em 10%;
+}
+
+.news-table{
+  border-spacing: 0 15px;
+  border-collapse: separate;
+  width: 100%;
+}
+
+.news-text{
+  height: 2em;
+  font-size: calc(10px + 0.8vw);
+}
+
+.underline{
+  border-bottom: 2px solid #eeeeee;
+}
+
+.news-days{
+  border-bottom: solid 2px rgb(32, 216, 186, 0.5);
+  text-align: center;
+  width: 5%;
+}
+
+.news-bar{
+  padding: 0 10px;
+  text-align: center;
+}
+/*news-wrapper css end*/
+
+/*about-wrapper css start*/
+.about-wrapper {
+  padding-bottom: calc(8vw - 2vh);
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+.about-steg {
   font-family: "Noto Sans JP";
   font-size: calc(10px + 0.8vw);
   font-weight: 400;
   color: #404040;
   padding: 4em 10%;
   display: flex;
-  justify-content:center;
-
+  justify-content: center;
 }
 
-.about-contents{
+.about-contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-img{
+.about-img {
   height: 25vw;
   width: 25vw;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.about-label{
+.about-label {
   width: 50%;
 }
 
-.about-title-long{
+.about-title-long {
   width: 9.5em;
   height: 1.2em;
   font-family: "Noto Sans JP";
   font-size: calc(12px + 1vw);
   font-weight: 400;
   color: #404040;
-  border-bottom: 3px solid rgb(32,216,186,0.5);
+  border-bottom: 3px solid rgb(32, 216, 186, 0.5);
   margin: 1em 10%;
 }
 
-.about-title-short{
+.about-title-short {
   width: 5em;
   height: 1.2em;
   font-family: "Noto Sans JP";
   font-size: calc(12px + 1vw);
   font-weight: 400;
   color: #404040;
-  border-bottom: 3px solid rgb(32,216,186,0.5);
+  border-bottom: 3px solid rgb(32, 216, 186, 0.5);
   margin: 1em 10%;
 }
 
-.about-text{
+.about-text {
   font-family: "Noto Sans JP";
   font-size: calc(10px + 0.8vw);
   font-weight: 400;
@@ -496,42 +543,103 @@ label:focus {
 }
 /*about-wrapper css end*/
 
+/*works-wrapper css start */
+.works-container {
+  padding: 10vw 0;
+}
+
+.works-cord {
+  margin: 0 10vw 7vw 10vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 18vw;
+}
+
+.works-link{
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+}
+
+.square {
+  width: auto;
+  height: 18vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.works-cord-content {
+  margin: 2vw 4vw;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.works-title {
+  font-weight: 400;
+  padding-bottom: 1vh;
+  border-bottom: solid 4px rgb(32, 216, 186, 0.5);
+  position: relative;
+  width: 100%;
+  font-size: calc(12px + 1vw);
+}
+
+.works-title:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 90%;
+  border-bottom: solid 4px #eeeeee;
+}
+
+.works-content {
+  margin: 1.5vh 0;
+  font-size: calc(10px + 0.8vw);
+  color: #888888;
+}
+/*works-wrapper css end*/
+
 /*partners-wrapper css start*/
-.partners-wrapper{
+.partners-wrapper {
   background: #eeeeee;
   overflow-x: hidden;
 }
 
-.triangle-top-g{     /*[all css] triangle-top*/
+.triangle-top-g {
+  /*[all css] triangle-top*/
   border-top: 18vh solid #ffffff;
   border-left: 100vw solid transparent;
 }
 
-.triangle-top-w{     /*[all css] triangle-top*/
+.triangle-top-w {
+  /*[all css] triangle-top*/
   border-top: 18vh solid #eeeeee;
   border-left: 100vw solid transparent;
 }
 
-.partners-container{
+.partners-container {
   padding: 10vh 0;
 }
 
-.partners-contents{
+.partners-contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.partners-logo{
+.partners-logo {
   width: 20vw;
   height: auto;
 }
 
-.partners-label{
+.partners-label {
   width: 50%;
 }
 
-.partners-name{
+.partners-name {
   font-family: "Noto Sans JP";
   font-size: calc(12px + 1vw);
   font-weight: 400;
@@ -539,7 +647,7 @@ label:focus {
   margin: 1em 10%;
 }
 
-.partners-description{
+.partners-description {
   font-family: "Noto Sans JP";
   font-size: calc(10px + 0.8vw);
   font-weight: 400;
@@ -549,12 +657,12 @@ label:focus {
 /*partners-wrapper css end*/
 
 /*members-wrapper css start*/
-.members-wrapper{
+.members-wrapper {
   padding-bottom: calc(12vw - 3vh);
   overflow-x: hidden;
 }
 
-.members-container{
+.members-container {
   padding-top: 6vw;
   display: flex;
   justify-content: center;
@@ -562,7 +670,7 @@ label:focus {
   flex-wrap: wrap;
 }
 
-.members-contents{
+.members-contents {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -571,7 +679,7 @@ label:focus {
   margin: 5vw;
 }
 
-.circle {	
+.circle {
   width: calc(80px + 5vw);
   height: calc(80px + 5vw);
   border-radius: 50%;
@@ -579,38 +687,38 @@ label:focus {
   cursor: pointer;
 }
 
-.members-text{
+.members-text {
   position: absolute;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width : calc(80px + 5vw);
+  width: calc(80px + 5vw);
   height: calc(80px + 5vw);
   font-family: "Noto Sans JP";
   font-weight: 400;
   font-size: calc(10px + 0.5vw);
-  color: rgb(0,0,0,0);
+  color: rgb(0, 0, 0, 0);
   cursor: pointer;
 }
 
-.img-shadow{
+.img-shadow {
   width: calc(80px + 5vw);
   height: calc(80px + 5vw);
   border-radius: 50%;
 }
 
-.members-contents:hover .circle{
+.members-contents:hover .circle {
   position: absolute;
   z-index: -1;
 }
 
-.members-contents:hover .img-shadow{
-  box-shadow: 0 0 100px 100px rgb(0,0,0,0.5) inset;
+.members-contents:hover .img-shadow {
+  box-shadow: 0 0 100px 100px rgb(0, 0, 0, 0.5) inset;
 }
 
-.members-contents:hover .members-text{
+.members-contents:hover .members-text {
   color: #ffffff;
 }
 
@@ -620,24 +728,24 @@ label:focus {
 /*members-wrapper css end*/
 
 /*contact-wrapper css start*/
-.contact-wrapper{
+.contact-wrapper {
   background: #eeeeee;
   overflow: hidden;
 }
 
-.contact-container{
+.contact-container {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
-.contact-container form{
+.contact-container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-contents input{
+.form-contents input {
   font-family: "Noto Sans JP";
   font-weight: 400;
   font-size: 15px;
@@ -646,7 +754,7 @@ label:focus {
   margin: 10px;
 }
 
-.form-contents textarea{
+.form-contents textarea {
   font-family: "Noto Sans JP";
   font-weight: 400;
   font-size: 15px;
@@ -656,7 +764,7 @@ label:focus {
   resize: none;
 }
 
-.form-button{
+.form-button {
   width: 10em;
   height: 2.5em;
   text-align: center;
@@ -668,31 +776,31 @@ label:focus {
   font-weight: 400;
   font-size: 15px;
   border-radius: 4px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.form-button:hover{
+.form-button:hover {
   background-color: #20d8ba;
   border-color: #189f88;
-  color: #FFF;
+  color: #fff;
 }
 /*contact-wrapper css end*/
 
 /*footer css start*/
 
-footer{
+footer {
   background: #404040;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-left ul{
+.footer-left ul {
   list-style: none;
 }
-.footer-left ul li a{
+.footer-left ul li a {
   font-family: "Noto Sans JP";
   font-weight: 400;
   font-size: calc(10px + 0.5vw);
@@ -700,28 +808,27 @@ footer{
   color: #ffffff;
 }
 
-.footer-left{
+.footer-left {
   padding: 3vw 4vw;
 }
 
-.footer-right{
+.footer-right {
   padding: 3vw 4vw;
   display: flex;
   justify-content: end;
 }
 
-.twitter-icon{
+.twitter-icon {
   width: 50px;
   height: 50px;
 }
 
-.copyright{
+.copyright {
   font-family: "Noto Sans JP";
   font-weight: 400;
   font-size: calc(6px + 0.5vw);
   text-align: center;
   color: #ffffff;
   padding: 20px;
-
 }
 /*footer css end*/

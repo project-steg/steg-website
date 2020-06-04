@@ -30,12 +30,22 @@
 }
 /*top-wrapper css end*/
 
+/*news-wrapper css start*/
+
+/*news-wrapper css end*/
+
 /*about-wrapper css start*/
 .about-img{
     height: 30vw;
     width: 30vw;
 }
 /*about-wrapper css end*/
+
+/*works-wrapper css start */
+.works-content{
+  display: none;
+}
+/*works-wrapper css end */
 
 /*partners-wrapper css start*/
 .partners-logo{
@@ -163,12 +173,35 @@
 
 /*top-wrapper css end*/
 
+/*news-wrapper css start*/
+/*news-wrapper css end*/
+
 /*about-wrapper css start*/
 .about-img{
     height: 40vw;
     width: 40vw;
 }
 /*about-wrapper css end*/
+
+/*works-wrapper css start*/
+.works-title {
+  font-weight: 400;
+  padding-bottom: 1vh;
+  border-bottom: solid 2px rgb(32, 216, 186, 0.5);
+  position: relative;
+  width: 100%;
+  font-size: calc(8px + 0.8vw);
+}
+
+.works-title:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 90%;
+  border-bottom: solid 2px #eeeeee;
+}
+/*works-wrapper css end*/
 
 /*partners-wrapper css start*/
 .triangle-top-g{     /*[all css] triangle-top*/
