@@ -545,48 +545,60 @@ label:focus {
 
 /*works-wrapper css start */
 .works-container {
-  padding: 10vh 0;
+  padding: 10vw 0;
 }
 
 .works-cord {
-  margin: 0 10vw 10vh 10vw;
+  margin: 0 10vw 7vw 10vw;
   display: flex;
   justify-content: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 18vw;
+}
+
+.works-link{
+  display: inline-block;
+  width: 60%;
+  text-align: center;
 }
 
 .square {
-  width: calc(100% - 55%);
-  height: auto;
+  width: auto;
+  height: 18vw;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
 
 .works-cord-content {
-  margin: 2vh 4vw;
+  margin: 2vw 4vw;
+  overflow-y: auto;
+  width: 100%;
 }
 
 .works-title {
   font-weight: 400;
   padding-bottom: 1vh;
-  border-bottom: solid 2px rgb(32, 216, 186, 0.5);
+  border-bottom: solid 4px rgb(32, 216, 186, 0.5);
   position: relative;
-  width: 35vw;
-  font-size: calc(10px + 0.8vw);
+  width: 100%;
+  font-size: calc(12px + 1vw);
 }
 
 .works-title:after{
   content: "";
   position: absolute;
   right: 0;
-  bottom: -2px;
+  bottom: -4px;
   width: 90%;
-  border-bottom: solid 2px #eeeeee;
+  border-bottom: solid 4px #eeeeee;
 }
 
 .works-content {
   margin: 1.5vh 0;
+  font-size: calc(10px + 0.8vw);
+  color: #888888;
 }
 /*works-wrapper css end*/
 
